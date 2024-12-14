@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed.Rezk</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      const correctPassword = "1111"; // قم بتغيير كلمة المرور هنا
+      if (password === correctPassword) {
+        document.getElementById("login").classList.add("hidden");
+        document.getElementById("main-content").classList.remove("hidden");
+      } else {
+        alert("كلمة السر غير صحيحة!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- قسم تسجيل الدخول -->
+  <div id="login">
+    <h1>مرحبًا بك في Ahmed.Rezk</h1>
+    <p>أدخل كلمة المرور للدخول:</p>
+    <input type="password" id="password" placeholder="كلمة السر">
+    <button onclick="checkPassword()">دخول</button>
+  </div>
+
+  <!-- المحتوى الرئيسي للموقع -->
+  <div id="main-content" class="hidden">
+    <header>
+      <h1>Ahmed.Rezk</h1>
+      <p>مرحبًا بك! هذه الصفحة الرئيسية.</p>
+    </header>
+
+    <div class="container">
+      <section class="gallery">
+        <h2></h2></h2>
+        <img src="https://assets.onecompiler.app/4332z9fus/4332yyf4x/Picsart_24-07-04_17-30-09-033.jpg" alt="صورة 1" style="width: 100%; max-width: 300px; margin: 10px;">
+        <img src="image2.jpg" alt="صورة 2" style="width: 100%; max-width: 300px; margin: 10px;">
+      </section>
+
+      <section class="blog">
+        <h2>You may look at what I see, but you do not see what I see</h2></h2>
+        <div class="blog-post">
+          <h3>● DÈJÀ VU</h3>
+          <p3>● BNNIT</p3></p>
+        </div
+        <div class="blog-post">
+          <h3>● BBLSH</h3><h3>
+          <p>● RHLFRE</p></p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2024 جميع الحقوق محفوظة</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
